@@ -1,0 +1,28 @@
+<ion-header class="header-page">
+    <ion-toolbar class="toolbar-page">
+        <ion-title>Global Chat</ion-title>
+        <ion-buttons>
+            <ion-menu-button menu="main-menu" color="light"></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="content-page">
+    <ion-item class="message" *ngFor='let comment of globalChatService.comments'>
+        <ion-avatar slot="start">
+            <img src="../../../assets/icon/defaultIcon.png" />
+        </ion-avatar>
+        <div class="message-content">
+            <h3>{{comment.nameUser}}</h3>
+            <p class="dateSent">{{comment.createdAt | date:'dd/MM/yy h:mm a'}}</p>
+            <p>{{comment.message}}</p>
+        </div>
+    </ion-item>
+
+    <ion-item class="send-message">
+        <ion-textarea placeholder="Type your comment..." [(ngModel)]="globalChatService.message" required="true"></ion-textarea>
+        <ion-button (click)="globalChatService.createComment()">
+            <ion-icon name="send"></ion-icon>
+        </ion-button>
+    </ion-item>
+</ion-content>

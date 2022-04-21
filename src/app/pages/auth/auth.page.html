@@ -1,0 +1,71 @@
+<ion-header class="header-page">
+    <ion-toolbar class="toolbar-page">
+        <ion-title>SignIn or SignUp</ion-title>
+        <ion-buttons>
+            <ion-menu-button menu="main-menu" color="light"></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="content-page">
+    <ion-card id="signin-content" [hidden]='hiddenSignin'>
+        <ion-card-header>
+            <ion-card-title>Signin</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-item>
+                <ion-icon name="at-outline"></ion-icon>
+                <ion-label>Email:</ion-label>
+                <ion-input placeholder="your email..." type="email"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-icon name="key-outline"></ion-icon>
+                <ion-label>Password:</ion-label>
+                <ion-input placeholder="password..." type="password"></ion-input>
+            </ion-item>
+            <ion-button color="light">
+                <ion-icon name="log-in-outline"></ion-icon>&nbsp;Login
+            </ion-button>
+            <p>Don't have an acount?
+                <a (click)='hiddeForm()'>
+                    <ion-icon name="person-add-outline"></ion-icon>&nbsp;Signup
+                </a>
+            </p>
+        </ion-card-content>
+    </ion-card>
+    <ion-card id="signup-content" [hidden]='hiddenSignup'>
+        <ion-card-header>
+            <ion-card-title>Signup</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-item>
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <ion-label>Name:</ion-label>
+                <ion-input placeholder="your name..." type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <ion-label>Last Name:</ion-label>
+                <ion-input placeholder="last name..." type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-icon name="at-outline"></ion-icon>
+                <ion-label>Email:</ion-label>
+                <ion-input placeholder="your email..." type="email"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-icon name="key-outline"></ion-icon>
+                <ion-label>Password:</ion-label>
+                <ion-input placeholder="password..." type="password"></ion-input>
+            </ion-item>
+            <ion-button color="light">
+                <ion-icon name="person-add-outline"></ion-icon>&nbsp;Register
+            </ion-button>
+            <p>Already have an acount?
+                <a (click)='hiddeForm()'>
+                    <ion-icon name="log-in-outline"></ion-icon>&nbsp;Signin
+                </a>
+            </p>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

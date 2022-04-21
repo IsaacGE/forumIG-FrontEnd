@@ -1,0 +1,59 @@
+.content-page {
+    position: relative;
+}
+
+.content-page .message,
+.content-page .my-message {
+    --background: #e6e6e6;
+    margin: auto;
+    margin-left: 5px;
+    margin-right: 20px;
+    margin-top: 15px;
+    border-radius: 20px;
+    padding: 2px;
+    position: relative;
+}
+
+.content-page .my-message {
+    --background: #000;
+}
+
+.content-page .message .message-content h3,
+.content-page .my-message .message-content h3 {
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.content-page .message .message-content p,
+.content-page .my-message .message-content p {
+    font-size: 11pt;
+    font-weight: 200;
+}
+
+.content-page .message .message-content .dateSent,
+.content-page .my-message .message-content .dateSent {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.content-page .send-message {
+    position: fixed;
+    bottom: 5px;
+    width: 97%;
+    left: 5px;
+    padding: 1px;
+    --background: #ffffff57;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.content-page .send-message ion-button {
+    margin-top: 15px;
+    font-size: 13pt;
+    --background: none;
+}
+
+.content-page .send-message ion-button:hover {
+    color: #000;
+}

@@ -1,0 +1,36 @@
+.content-page ion-card {
+    --background: #000;
+    border: solid 2px #008cff;
+}
+
+.content-page ion-card ion-card-header ion-card-title {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content-page ion-card ion-card-content {
+    text-align: center;
+}
+
+.content-page ion-card ion-card-content ion-item {
+    --background: none;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.content-page ion-card ion-card-content ion-button {
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.content-page ion-card ion-card-content p {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 11pt;
+}
+
+.content-page ion-card ion-card-content p a {
+    color: #008cff;
+    font-weight: bold;
+}

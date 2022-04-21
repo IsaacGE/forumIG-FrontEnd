@@ -1,0 +1,21 @@
+.menu-header .menu-toolbar {
+    --background: #005eac;
+    color: #fff;
+}
+
+.menu-content {
+    --background: #000;
+}
+
+ion-list ion-item {
+    --background: #000;
+    color: #fff;
+}
+
+ion-list ion-item:hover {
+    --background: #005eac;
+}
+
+.menu-content ion-card {
+    --background: none;
+}

@@ -1,0 +1,31 @@
+* {
+    color: #fff;
+    text-align: center;
+}
+
+.content-page h2 {
+    margin-top: 50px;
+}
+
+.content-page img {
+    height: 150px;
+    width: 150px;
+}
+
+.content-page h3 {
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+.content-page ion-row {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.content-page ion-row ion-col ion-button {
+    --background: #000;
+}
+
+.content-page ion-row ion-col ion-button:hover {
+    --background: #005eac;
+}
